@@ -19,4 +19,8 @@ build {
   sources = [
     "source.amazon-ebs.ubuntu-nginx"
   ]
+
+provisioner "shell" {
+    script = "scripts/conf_nginx.sh"
+  }
 }
